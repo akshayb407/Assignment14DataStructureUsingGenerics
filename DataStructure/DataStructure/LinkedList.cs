@@ -31,7 +31,7 @@ namespace DataStructure
         }
 
 
-        internal void display()
+        internal void display() //to display the program
         {
 
             Node temp = this.head;
