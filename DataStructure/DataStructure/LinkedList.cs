@@ -6,10 +6,20 @@ using System.Threading.Tasks;
 
 namespace DataStructure
 {
-    internal class LinkedList
+    public class LinkedList
     {
         internal Node head;  //defined Node class 
 
+        internal class Node
+        {
+            public int data;
+            public Node next;
+            public Node(int data)
+            {
+                this.data = data;
+            }
+
+        }
         internal void Add(int data)
         {
             Node node = new Node(data); //create an object of Node class pushimg data into node class
