@@ -6,40 +6,33 @@ using System.Threading.Tasks;
 
 namespace DataStructure
 {
-    public class LinkedList
+    public class LinkedList<T>
     {
-        internal Node head;  //defined Node class 
-
-        internal class Node
+        public class Node
         {
-            public int data;
+            public T data;
             public Node next;
-            public Node(int data)
+            public Node(T data)
             {
                 this.data = data;
             }
-
         }
-        internal void Add(int data)
+        private Node head;
+       
+       
+        public bool Add(T data)
         {
-            Node node = new Node(data); //create an object of Node class pushimg data into node class
-
-            if (this.head == null)  //checking
+            Node n = new Node(data);
+            if (head == null)
             {
-                this.head = node; //then push this into head
+                head = n;
+                return true;
             }
-            else
-            {
-                Node temp = head;
-                while (temp.next != null)
-                {
-                    temp = temp.next;
-                }
-                temp.next = node;
-            }
-            Console.WriteLine("{0} inserted into LinkedList", node.data);
+            n.next = head;
+            head = n;
+            return true;
         }
-
+       
 
         internal void display() //to display the program
         {
@@ -60,7 +53,5 @@ namespace DataStructure
 
 
     }
-
-
 }
 
