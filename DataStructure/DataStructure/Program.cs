@@ -8,14 +8,14 @@ namespace DataStructure
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
-            LinkedList List = new LinkedList();
-            List.Add(70);
-            List.Add(30);
-            List.Add(56);
-            
-
-            List.display();
+            LinkedList<string> list = new LinkedList<string>();
+            list.Add("56");
+            list.Add("30");
+            list.Add("70");
+            list.Append("56");
+            list.Append("30");
+            list.Append("70");
+            list.display();
 
 
         }
