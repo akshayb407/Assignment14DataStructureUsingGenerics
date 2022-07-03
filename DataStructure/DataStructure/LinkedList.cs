@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructure
 {
-    public class LinkedList<T> 
+    public class LinkedList<T>
     {
        
         public class Node
@@ -107,7 +107,7 @@ namespace DataStructure
                 return true;
             return false;
         }
-        //correct
+        
         public int Size()
         {
             if (head == null)
