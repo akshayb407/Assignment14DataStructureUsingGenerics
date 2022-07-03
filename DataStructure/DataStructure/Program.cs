@@ -12,8 +12,8 @@ namespace DataStructure
             list.Add("70");
             list.Add("30");
             list.Add("56");
-            //list.Insert(1,"30");
-            list.Pop(0);
+           // list.Pop(0);
+            list.Pop(2);
             list.display();
 
         }
