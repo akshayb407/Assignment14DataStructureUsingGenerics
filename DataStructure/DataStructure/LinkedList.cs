@@ -37,7 +37,7 @@ namespace DataStructure
             t.next = n;
             return true;
         }
-       
+
         public T Pop()
         {
             if (head == null)
